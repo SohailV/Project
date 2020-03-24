@@ -1,0 +1,41 @@
+
+<html>
+<body>  
+  <router-outlet></router-outlet> 
+  <div *ngIf="show1">
+     
+  <h1>Alredy Signed UP</h1>
+  <form method="POST" action="{% url 'udetails' %}">
+  <input [(ngModel)]="login.username" name="username" placeholder="Username"><br>
+  <input [(ngModel)]="login.password" name="password" placeholder="Password" type="password"><br>
+  <button (click)="onLogin()">Login</button>
+</form>
+</div>
+
+<div style="text-align: center" *ngIf="show1">
+  <h1>Welcome to my Project</h1>
+  <input [(ngModel)]="register.username" placeholder="Username"><br>
+  <input [(ngModel)]="register.password" placeholder="Password" type="password"><br>
+  <input [(ngModel)]="register.email" placeholder="Email"><br><br>
+  <button (click)="registerUser()">Register User</button>
+</div>
+
+
+</body>
+
+
+    <!-- <script>
+        var app = angular.module("myApp", ["ngRoute"]);
+        app.config(function($routeProvider) {
+            $routeProvider
+            .when("home/home.component.html", {
+                templateUrl : "home.html"
+                
+                
+            });
+            console.log("i am here");
+            
+           
+        });
+        </script> -->
+</html>
