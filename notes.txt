@@ -2,3 +2,9 @@ django admin
 
 svirani1082
 myproject01
+
+intall python in the below directory
+E:\Project\Python\Install
+
+Py charm install path.
+E:\Project\Python\Pycharm_Install\PyCharm Community Edition 2019.3.3
